@@ -1,0 +1,5 @@
+"lede-build": {
+    "repository": "git@github.com:McShauno/lede-creator-example.git",
+    "buildFolder": "build"
+
+}

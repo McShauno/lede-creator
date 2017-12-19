@@ -131,3 +131,9 @@ function Fail() {
     LogLine "Failing: $failMessage"
     exit 1
 }  
+
+function GetTotalRevisionsSinceRevision() {
+    local __revision=$1
+    local __total="$(git rev-list ${__revision}..HEAD | wc -l)"
+    echo $__total
+}
